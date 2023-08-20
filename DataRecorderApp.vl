@@ -297,11 +297,26 @@
           </p:NodeReference>
           <Patch Id="MmdpjKkRWA4Ljtv69dDI3Z">
             <Canvas Id="CVSJE3DoMbEOq2cVygnV4w" CanvasType="Group">
-              <Node Bounds="859,661,250,275" Id="JCK2Eh1bQf0OP5r2efOzo4">
+              <Node Bounds="859,661,362,408" Id="JCK2Eh1bQf0OP5r2efOzo4">
                 <p:NodeReference LastCategoryFullName="ImGui.Widgets" LastDependency="VL.ImGui.vl">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Window" />
                 </p:NodeReference>
+                <Pin Id="AGoftiM0882PeCIdcomUFz" Name="Context" Kind="InputPin" />
+                <Pin Id="F3nZbIp6qnuNgJXrJywJWi" Name="Name" Kind="InputPin" DefaultValue="Recorders" />
+                <Pin Id="AY5s0OIZuv6OFFzjLiLzEV" Name="Visible" Kind="InputPin" />
+                <Pin Id="M8kjqfNsBwbNJm3umQXi8l" Name="Collapsed" Kind="InputPin" />
+                <Pin Id="UwGKtdQpoR3LzL1pOWCyU9" Name="Closing" Kind="InputPin" />
+                <Pin Id="ArrYOQVzH1lLAHWpxvu1Ob" Name="Bounds" Kind="InputPin" />
+                <Pin Id="GskarpqeAg1L8XlsyRjZWZ" Name="Style" Kind="InputPin" />
+                <Pin Id="D4wHY06KwygOvebMsJpaPG" Name="Flags" Kind="InputPin" />
+                <Pin Id="LGpmT8FIqeKLrsZdP6e8cD" Name="Lifespan" Kind="InputPin" />
+                <Pin Id="NOBwMBa9FKvOg0JZdmefBx" Name="Context" Kind="OutputPin" />
+                <Pin Id="JhgPZPxMm6YPHw4gxohMiq" Name="Close Clicked" Kind="OutputPin" />
+                <Pin Id="SN5SFx3icqtPBSq4yxhEHT" Name="Content Is Visible" Kind="OutputPin" />
+                <ControlPoint Id="EQy0JXDW1OsPK0aXgDW2Is" Bounds="954,1063" Alignment="Bottom" />
+                <ControlPoint Id="G2zH8MovXkpMQBiirmRjWK" Bounds="873,1063" Alignment="Bottom" />
+                <ControlPoint Id="BuogcLoQnUuMOZf36jycX8" Bounds="1016,1063" Alignment="Bottom" />
                 <Patch Id="HhQATIXEO1lPrUcUW1VvrH" ManuallySortedPins="true">
                   <Patch Id="T16LfWTCU7KMXSkch6scrs" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="IKFrVUKnO7gLvgro28mLir" Name="Update" ParticipatingElements="UnGCAOTlsmaLYNH1skIE6s" ManuallySortedPins="true" />
@@ -333,13 +348,14 @@
                     <Pin Id="D8tBLGPhql8OaVTna5wLaM" Name="Context" Kind="OutputPin" />
                     <Pin Id="OQprNzoGtQBM3gN0yAgP7R" Name="Bang" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="934,756,163,160" Id="CcOjXHAbduoNYFhXDmCtRI">
+                  <Node Bounds="934,756,275,293" Id="CcOjXHAbduoNYFhXDmCtRI">
                     <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <CategoryReference Kind="Category" Name="Primitive" />
                       <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                     </p:NodeReference>
                     <Pin Id="OgoMQ1GRGUiPl93vE2ENdx" Name="Break" Kind="OutputPin" />
+                    <ControlPoint Id="EBWJAuH9UbfLCzLX5LYB5R" Bounds="950,762" Alignment="Top" />
                     <Patch Id="OxDoUMVHUFvLUU6rWAMeoV" ManuallySortedPins="true">
                       <Patch Id="KWgO4slr2IINUcyYO1v9tB" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="OJ0OyKpxP42Oxzkycna5jD" Name="Update" ManuallySortedPins="true" />
@@ -353,7 +369,7 @@
                         <Pin Id="CVktgKa1s7cOrmlxW3zAac" Name="Input" Kind="StateInputPin" />
                         <Pin Id="P3yzfVw1MyKNh7TdUEoRQ4" Name="Value" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="1004,870,81,26" Id="ODtOBJAPzHoOxVyxXt784E">
+                      <Node Bounds="1003,861,81,26" Id="ODtOBJAPzHoOxVyxXt784E">
                         <p:NodeReference LastCategoryFullName="VL.DataRecorder.IRecorderSource" LastDependency="VL.DataRecorder.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="InterfaceTypeFlag" Name="IRecorderSource" NeedsToBeDirectParent="true" />
@@ -362,6 +378,7 @@
                         <Pin Id="Ojl6d0nK6vkQZFWBT0jOnx" Name="Input" Kind="StateInputPin" />
                         <Pin Id="HXh8Hzl76ztQQNS8tBUsK7" Name="Output" Kind="StateOutputPin" />
                         <Pin Id="NvR38pdOhc0LrkagreCepC" Name="Context" Kind="OutputPin" />
+                        <Pin Id="GPOn5b4AKRiNN98D2uGkZ4" Name="RemoveMe" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="946,826,62,26" Id="CgdtNmsytSNLuxe9aoQfXK">
                         <p:NodeReference LastCategoryFullName="Main.Recorder" LastDependency="DataRecorderApp.vl">
@@ -372,25 +389,41 @@
                         <Pin Id="UudExB9CS6TMDyoRtpPzCb" Name="Output" Kind="StateOutputPin" />
                         <Pin Id="AdtzjHIbh4rLgq2avY3jWi" Name="Source" Kind="OutputPin" />
                       </Node>
+                      <Node Bounds="1081,921,116,108" Id="JdQTl4yoCGtQXd1miDCJ7n">
+                        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                          <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                          <CategoryReference Kind="Category" Name="Primitive" />
+                          <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                        </p:NodeReference>
+                        <Pin Id="Izt12P2rBQ6MFSXLZlzNNh" Name="Condition" Kind="InputPin" />
+                        <Patch Id="QH3x3cJwMNfLKICeiFsGSa" ManuallySortedPins="true">
+                          <Patch Id="LxzuIsOQ9KPMfDJ8K4nndP" Name="Create" ManuallySortedPins="true" />
+                          <Patch Id="JSMZWwA6sBlP4yOb373k5O" Name="Then" ManuallySortedPins="true" />
+                          <Node Bounds="1093,983,92,26" Id="BoqSoLVtKTFOrIlNg3gewJ">
+                            <p:NodeReference LastCategoryFullName="Main.DataRecorderEngine" LastDependency="DataRecorderApp.vl">
+                              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                              <Choice Kind="OperationCallFlag" Name="RemoveRecorder" />
+                            </p:NodeReference>
+                            <Pin Id="EIQQP1bwUj1M6qvICGQt15" Name="Input" Kind="StateInputPin" />
+                            <Pin Id="Ghu6dotyZJ7MzMILuq3Y8S" Name="Key" Kind="InputPin" />
+                            <Pin Id="KHmCKmXqQuFQIIzf0wVjiF" Name="Output" Kind="StateOutputPin" />
+                            <Pin Id="MhtZvZIk8opOOhfE6jGN3j" Name="Result" Kind="OutputPin" />
+                          </Node>
+                          <Node Bounds="1137,944,48,26" Id="TanhiZdwDUtPhjbfUQnbZI">
+                            <p:NodeReference LastCategoryFullName="Main.Recorder" LastDependency="DataRecorderApp.vl">
+                              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                              <CategoryReference Kind="ClassType" Name="Recorder" NeedsToBeDirectParent="true" />
+                              <Choice Kind="OperationCallFlag" Name="GetId" />
+                            </p:NodeReference>
+                            <Pin Id="OU0YpVOlfm9Ouffhf6sFrF" Name="Input" Kind="StateInputPin" />
+                            <Pin Id="HGl96LmK7G3NMEKLlp9FlE" Name="Output" Kind="StateOutputPin" />
+                            <Pin Id="C1CnHOrFioCPJskgPElP7m" Name="Id" Kind="OutputPin" />
+                          </Node>
+                        </Patch>
+                      </Node>
                     </Patch>
-                    <ControlPoint Id="EBWJAuH9UbfLCzLX5LYB5R" Bounds="950,762" Alignment="Top" />
                   </Node>
                 </Patch>
-                <Pin Id="AGoftiM0882PeCIdcomUFz" Name="Context" Kind="InputPin" />
-                <Pin Id="F3nZbIp6qnuNgJXrJywJWi" Name="Name" Kind="InputPin" DefaultValue="Recorders" />
-                <Pin Id="AY5s0OIZuv6OFFzjLiLzEV" Name="Visible" Kind="InputPin" />
-                <Pin Id="M8kjqfNsBwbNJm3umQXi8l" Name="Collapsed" Kind="InputPin" />
-                <Pin Id="UwGKtdQpoR3LzL1pOWCyU9" Name="Closing" Kind="InputPin" />
-                <Pin Id="ArrYOQVzH1lLAHWpxvu1Ob" Name="Bounds" Kind="InputPin" />
-                <Pin Id="GskarpqeAg1L8XlsyRjZWZ" Name="Style" Kind="InputPin" />
-                <Pin Id="D4wHY06KwygOvebMsJpaPG" Name="Flags" Kind="InputPin" />
-                <Pin Id="LGpmT8FIqeKLrsZdP6e8cD" Name="Lifespan" Kind="InputPin" />
-                <Pin Id="NOBwMBa9FKvOg0JZdmefBx" Name="Context" Kind="OutputPin" />
-                <Pin Id="JhgPZPxMm6YPHw4gxohMiq" Name="Close Clicked" Kind="OutputPin" />
-                <Pin Id="SN5SFx3icqtPBSq4yxhEHT" Name="Content Is Visible" Kind="OutputPin" />
-                <ControlPoint Id="EQy0JXDW1OsPK0aXgDW2Is" Bounds="954,930" Alignment="Bottom" />
-                <ControlPoint Id="G2zH8MovXkpMQBiirmRjWK" Bounds="873,930" Alignment="Bottom" />
-                <ControlPoint Id="BuogcLoQnUuMOZf36jycX8" Bounds="1016,930" Alignment="Bottom" />
               </Node>
               <ControlPoint Id="ClWs3eWjdjNMeeN1ZTDiAG" Bounds="858,502" />
               <Node Bounds="858,580,88,26" Id="JpuI1cPX3B3N4QoD0Zyihk">
@@ -422,21 +455,21 @@
                   <Choice Kind="TypeFlag" Name="Vector2" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="859,1031,194,195" Id="E9QtJN8ybS1OanrxSQrx8q">
+              <Node Bounds="861,1217,194,195" Id="E9QtJN8ybS1OanrxSQrx8q">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
                   <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 </p:NodeReference>
                 <Pin Id="JmFDopyRxfPPSvFKTarsx4" Name="Condition" Kind="InputPin" />
-                <ControlPoint Id="G2V9Ydsu5l2M8K56nVUBbd" Bounds="873,1037" Alignment="Top" />
-                <ControlPoint Id="O3mBoA8YbaKOMmjpphUX78" Bounds="873,1220" Alignment="Bottom" />
-                <ControlPoint Id="BcrMuCx6aq2Nz9ELREqB8T" Bounds="965,1220" Alignment="Bottom" />
-                <ControlPoint Id="S8O0YFBupXLPgDbG0cuENk" Bounds="965,1037" Alignment="Top" />
+                <ControlPoint Id="G2V9Ydsu5l2M8K56nVUBbd" Bounds="875,1223" Alignment="Top" />
+                <ControlPoint Id="O3mBoA8YbaKOMmjpphUX78" Bounds="875,1406" Alignment="Bottom" />
+                <ControlPoint Id="BcrMuCx6aq2Nz9ELREqB8T" Bounds="967,1406" Alignment="Bottom" />
+                <ControlPoint Id="S8O0YFBupXLPgDbG0cuENk" Bounds="967,1223" Alignment="Top" />
                 <Patch Id="IukOXoUcIlZOG6xumhbQ6J" ManuallySortedPins="true">
                   <Patch Id="SgMXR04bNdfMPaMAYcCOg5" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="NcAqjRhoKCwN87iQ8kWNMS" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="879,1168,88,26" Id="VzoiKbiYGLHQPRjJz8tm99">
+                  <Node Bounds="881,1354,88,26" Id="VzoiKbiYGLHQPRjJz8tm99">
                     <p:NodeReference LastCategoryFullName="Main.DataRecorderEngine" LastDependency="DataRecorderApp.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="AddRecorder" />
@@ -446,7 +479,7 @@
                     <Pin Id="Obh868gAVMTPQQUPpAqq8D" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="NAC6SydAW5OOKFV1ERNPCk" Name="Result" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="967,1063,74,26" Id="A4vyzomyMSuMkwkDNYEJCS">
+                  <Node Bounds="969,1249,74,26" Id="A4vyzomyMSuMkwkDNYEJCS">
                     <p:NodeReference LastCategoryFullName="VL.DataRecorder.PosistageSource" LastDependency="VL.DataRecorder.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="ClassType" Name="PosistageSource" />
@@ -454,7 +487,7 @@
                     </p:NodeReference>
                     <Pin Id="QyGU8SY4ux4LSFLU113QVA" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="967,1105,48,26" Id="PinKMk5VQjoNUb9R1dW4mE">
+                  <Node Bounds="969,1291,48,26" Id="PinKMk5VQjoNUb9R1dW4mE">
                     <p:NodeReference LastCategoryFullName="Main.Recorder" LastDependency="DataRecorderApp.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="ClassType" Name="Recorder" />
@@ -465,8 +498,8 @@
                   </Node>
                 </Patch>
               </Node>
-              <Pad Id="N2RlIZUhdZpMyidJ4gisED" Comment="" Bounds="963,1250,35,35" ShowValueBox="true" isIOBox="true" />
-              <Node Bounds="1103,1033,170,195" Id="Nrfd9u60VYiPKeAjlPfM4G">
+              <Pad Id="N2RlIZUhdZpMyidJ4gisED" Comment="" Bounds="959,1507,35,35" ShowValueBox="true" isIOBox="true" />
+              <Node Bounds="1082,1217,170,195" Id="Nrfd9u60VYiPKeAjlPfM4G">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -476,7 +509,7 @@
                 <Patch Id="D5GEcEEgfQlQP1CkudZwDG" ManuallySortedPins="true">
                   <Patch Id="FWF7lN0hsydOeubuQOTpEj" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="IorSZZyJTUvMpLHkveSyyv" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="1123,1170,88,26" Id="QPQJxDQbVetNRQogw0DXBI">
+                  <Node Bounds="1102,1354,88,26" Id="QPQJxDQbVetNRQogw0DXBI">
                     <p:NodeReference LastCategoryFullName="Main.DataRecorderEngine" LastDependency="DataRecorderApp.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="AddRecorder" />
@@ -486,7 +519,7 @@
                     <Pin Id="JHIev7AhiadOeJwSGFzxXh" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="B9CM8HrJ9PtLNTchOHtVeJ" Name="Result" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="1205,1077,56,26" Id="DqFxwqr6ozqM4t1lAA8JiV">
+                  <Node Bounds="1184,1261,56,26" Id="DqFxwqr6ozqM4t1lAA8JiV">
                     <p:NodeReference LastCategoryFullName="VL.DataRecorder.MidiSource" LastDependency="VL.DataRecorder.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="ClassType" Name="MidiSource" />
@@ -494,7 +527,7 @@
                     </p:NodeReference>
                     <Pin Id="NdaWEyRddHyLMY8GG1lu8T" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="1206,1119,48,26" Id="OGtR5mtBYllPMOaD4C8Q5a">
+                  <Node Bounds="1185,1303,48,26" Id="OGtR5mtBYllPMOaD4C8Q5a">
                     <p:NodeReference LastCategoryFullName="Main.Recorder" LastDependency="DataRecorderApp.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="ClassType" Name="Recorder" />
@@ -504,10 +537,10 @@
                     <Pin Id="VEZNb9onCy2PdZ4PMra35O" Name="Output" Kind="StateOutputPin" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="UU7gl37vs98P4WOdgDMcGk" Bounds="1117,1039" Alignment="Top" />
-                <ControlPoint Id="OzFtm40v44QQDCvUnFyqYy" Bounds="1117,1222" Alignment="Bottom" />
-                <ControlPoint Id="DmSOwWZp5kpMuRnQrOgSg4" Bounds="1209,1222" Alignment="Bottom" />
-                <ControlPoint Id="LDoMXZc0tslLtpGlTW6zzD" Bounds="1209,1039" Alignment="Top" />
+                <ControlPoint Id="UU7gl37vs98P4WOdgDMcGk" Bounds="1096,1223" Alignment="Top" />
+                <ControlPoint Id="OzFtm40v44QQDCvUnFyqYy" Bounds="1096,1406" Alignment="Bottom" />
+                <ControlPoint Id="DmSOwWZp5kpMuRnQrOgSg4" Bounds="1188,1406" Alignment="Bottom" />
+                <ControlPoint Id="LDoMXZc0tslLtpGlTW6zzD" Bounds="1188,1223" Alignment="Top" />
               </Node>
             </Canvas>
             <!--
@@ -558,6 +591,10 @@
             <Link Id="MWnYa4ozFoiN6KTV5k3sX5" Ids="OQprNzoGtQBM3gN0yAgP7R,BuogcLoQnUuMOZf36jycX8" />
             <Link Id="PFlRL0jGZ2OP60QjjcwLsl" Ids="BuogcLoQnUuMOZf36jycX8,VSsqJO42sd9QPiWhP4I3H2" />
             <Link Id="IWdJd6907j0OpwZKpUiAS2" Ids="G2zH8MovXkpMQBiirmRjWK,UU7gl37vs98P4WOdgDMcGk" />
+            <Link Id="RjqM5aHb05KOdIvhZyoy6U" Ids="GPOn5b4AKRiNN98D2uGkZ4,Izt12P2rBQ6MFSXLZlzNNh" />
+            <Link Id="T2anjFgnnVzQSrAmoWQnrg" Ids="HorD0QDzymvMIGzy3moteN,EIQQP1bwUj1M6qvICGQt15" />
+            <Link Id="EPvC7anJw9gOP1wnyFI5db" Ids="P3yzfVw1MyKNh7TdUEoRQ4,OU0YpVOlfm9Ouffhf6sFrF" />
+            <Link Id="BgUGIWutLejNTCUbJnx3jv" Ids="C1CnHOrFioCPJskgPElP7m,Ghu6dotyZJ7MzMILuq3Y8S" />
           </Patch>
         </Node>
       </Canvas>
